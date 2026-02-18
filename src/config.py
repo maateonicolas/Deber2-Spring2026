@@ -1,0 +1,6 @@
+START_NODE = "Elmira"
+GOAL_NODE = "New York City"
+
+VERBOSE = True
+RANDOM_SEED = 0
+MAX_DEPTH_IDDFS = 20
