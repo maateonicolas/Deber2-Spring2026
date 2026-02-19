@@ -1,0 +1,4 @@
+# No external dependencies required.
+# Uses only Python Standard Library.
+
+python>=3.10

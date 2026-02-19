@@ -33,7 +33,7 @@ class IDDFS:
             if found is not None:
                 cost = path_cost(self.graph, found)
                 if self.verbose:
-                    print(f"[IDDFS] ✅ Encontrado en límite {depth_limit}: {found} | costo={cost}")
+                    print(f"[IDDFS] Encontrado en límite {depth_limit}: {found} | costo={cost}")
                     print(f"[IDDFS] Nodos generados: {self.generated}")
                 return SearchResult(found, cost, self.generated)
 

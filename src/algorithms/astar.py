@@ -48,7 +48,7 @@ class AStar:
                 path = reconstruct_path(parent, goal)
                 cost = int(g_cost[goal])
                 if self.verbose:
-                    print(f"[A*] ✅ Encontrado goal: {path} | costo={cost}")
+                    print(f"[A*] Encontrado goal: {path} | costo={cost}")
                     print(f"[A*] Nodos generados: {self.generated}")
                 return SearchResult(path, cost, self.generated)
 

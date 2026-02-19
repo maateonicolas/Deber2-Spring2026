@@ -47,7 +47,7 @@ class BidirectionalUCS:
             # Regla de parada (si ya no puedo mejorar)
             if pq_f.peek_priority() + pq_b.peek_priority() >= best_cost:
                 if self.verbose:
-                    print(f"[UCS-BI] 🛑 Paro: minF+minB >= best_cost  ({pq_f.peek_priority():.0f}+{pq_b.peek_priority():.0f} >= {best_cost:.0f})")
+                    print(f"[UCS-BI] Paro: minF+minB >= best_cost  ({pq_f.peek_priority():.0f}+{pq_b.peek_priority():.0f} >= {best_cost:.0f})")
                 break
 
             # Expandimos el lado que tenga menor frontera (más prometedor)
@@ -103,7 +103,7 @@ class BidirectionalUCS:
         cost = int(best_cost)
 
         if self.verbose:
-            print(f"[UCS-BI] ✅ Mejor ruta: {full_path}")
+            print(f"[UCS-BI] Mejor ruta: {full_path}")
             print(f"[UCS-BI] Costo óptimo: {cost}")
             print(f"[UCS-BI] Nodos generados: {self.generated}")
 
@@ -168,6 +168,6 @@ class BidirectionalUCS:
                         best_cost = cand
                         meeting = v
                         if self.verbose:
-                            print(f"    [UCS-BI] ⭐ Nuevo mejor: best_cost={best_cost:.0f}, meeting={meeting}")
+                            print(f"    [UCS-BI] Nuevo mejor: best_cost={best_cost:.0f}, meeting={meeting}")
 
         self._last_best = (best_cost, meeting)
